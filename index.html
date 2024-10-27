@@ -60,7 +60,13 @@
             </div>
         </div>
         <div class="image">
-            <iframe id="pdf-frame" src="mmau-hero.pdf" style="width: 100%; border: none;"></iframe>
+            <iframe
+                    src="mmau-hero.pdf"
+                    frameBorder="0"
+                    scrolling="false"
+                    height="100%"
+                    width="100%"
+                ></iframe>
         </div>
     </div>
     
@@ -137,27 +143,6 @@
             <img src="pat.jpg" alt="Earth-like view of a fictional landmass">
         </div>
     </div>
-<script>
-        // Path to the PDF file
-        const pdfPath = 'mmau-hero.pdf';
 
-        async function loadPDFDimensions() {
-            const pdf = await pdfjsLib.getDocument(pdfPath).promise;
-            const page = await pdf.getPage(1);  // Load the first page to get dimensions
-
-            const viewport = page.getViewport({ scale: 1 });
-            const pdfWidth = viewport.width;
-            const pdfHeight = viewport.height;
-
-            // Set iframe dimensions to match PDF dimensions
-            const iframe = document.getElementById('pdf-frame');
-            iframe.style.width = pdfWidth + 'px';
-            iframe.style.height = pdfHeight + 'px';
-            iframe.src = pdfPath;
-        }
-
-        // Load the PDF and adjust the iframe dimensions
-        loadPDFDimensions();
-    </script>
 </body>
 </html>
