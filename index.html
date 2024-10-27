@@ -138,17 +138,26 @@
         </div>
     </div>
 <script>
-        // Adjust iframe height based on the window's height
-        function adjustIframeHeight() {
-            var iframe = document.getElementById("pdf-frame");
-            iframe.style.height = window.innerHeight + "px";
+        // Path to the PDF file
+        const pdfPath = 'mmau-hero.pdf';
+
+        async function loadPDFDimensions() {
+            const pdf = await pdfjsLib.getDocument(pdfPath).promise;
+            const page = await pdf.getPage(1);  // Load the first page to get dimensions
+
+            const viewport = page.getViewport({ scale: 1 });
+            const pdfWidth = viewport.width;
+            const pdfHeight = viewport.height;
+
+            // Set iframe dimensions to match PDF dimensions
+            const iframe = document.getElementById('pdf-frame');
+            iframe.style.width = pdfWidth + 'px';
+            iframe.style.height = pdfHeight + 'px';
+            iframe.src = pdfPath;
         }
 
-        // Call the function when the page loads
-        window.onload = adjustIframeHeight;
-        
-        // Call the function when the window is resized
-        window.onresize = adjustIframeHeight;
+        // Load the PDF and adjust the iframe dimensions
+        loadPDFDimensions();
     </script>
 </body>
 </html>
