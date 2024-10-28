@@ -37,11 +37,13 @@ header h1 {
     font-weight: bold;
     margin: 0;
     color: #3f0e17;
+    line-height: 1; /* Ensures vertical centering with logo */
 }
 
 header img {
-    height: 60px; /* Adjust logo size */
-    margin-right: 15px;
+    height: 1.2em; /* Match logo height to text height */
+    margin-right: 10px;
+    vertical-align: middle; /* Align with the text vertically */
 }
 
 .section {
