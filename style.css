@@ -33,17 +33,15 @@ header {
 }
 
 header h1 {
-    font-size: 2.5em;
+    font-size: 3em;
     font-weight: bold;
     margin: 0;
-    color: #3f0e17;
-    line-height: 1; /* Ensures vertical centering with logo */
+    color: #4e3629;
 }
 
 header img {
-    height: 1.2em; /* Match logo height to text height */
-    margin-right: 10px;
-    vertical-align: middle; /* Align with the text vertically */
+    height: 60px; /* Adjust logo size */
+    margin-right: 15px;
 }
 
 .section {
