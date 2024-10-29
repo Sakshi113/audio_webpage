@@ -39,7 +39,7 @@ header img {
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    width: 80%;
+    width: 90%; /* Central alignment */
     max-width: 1200px;
     border-bottom: 1px solid #ccc;
     border-radius: 8px;
@@ -59,6 +59,7 @@ h1 {
     color: #1f265f;
     margin-bottom: 10px;
     line-height: 1.2;
+    
 }
 
 h1 i {
@@ -80,6 +81,16 @@ h2 {
     margin-bottom: 10px;
     line-height: 1.6;
 }
+
+h2 {
+    font-size: 1.8em;
+    font-weight: bold;
+    color: #1f265f;
+    margin-bottom: 10px;
+    line-height: 1.2;
+    text-align: center;
+}
+
 
 .description p strong {
     margin-right: 5px;
