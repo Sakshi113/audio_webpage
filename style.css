@@ -266,6 +266,8 @@ footer {
     margin: 0 0 10px 20px; /* Top, Right, Bottom, Left */
     width: 40%;
     border-radius: 10px;
+    margin-top: 10px;
+    margin-left: 20px;
     transition: transform 0.3s;
 }
 
@@ -277,7 +279,9 @@ footer {
     font-size: 1.1em;
     line-height: 1.8;
     margin-bottom: 20px;
-    margin-left: 20px;
+    margin-left: 0px;
+    margin-right: 30px;
+    margin-top: 0px;
     text-align: justify;
 }
 
