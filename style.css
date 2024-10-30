@@ -330,6 +330,33 @@ header h1 {
     margin: 0;
 }
 
+.team-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 100px; /* Increased space between headshots */
+    justify-content: start; /* Aligns all headshots to the start */
+}
+
+.team-member {
+    text-align: center;
+    width: 190px; /* Increased width */
+}
+
+.team-headshot {
+    width: 120px; /* Increased size */
+    height: 150px;
+    border-radius: 10%; /* Makes headshots slightly rounded squares */
+}
+
+.team-member p {
+    margin: 10px 0 0;
+    font-size: 16px; /* Increased font size for names */
+}
+.team-name {
+    font-weight: bold;
+    color: #00008b; /* Dark blue color */
+}
+
 @media (max-width: 768px) {
     .header-container {
         flex-direction: column;
