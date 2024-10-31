@@ -268,6 +268,70 @@
             </div>
         </div>
     </section>
+    <section class="project-section">
+        <div class="container">
+            <div class="text-content">
+                <h2>SLICER: Symmetrical Learning of Instance and Cluster-level Efficient Representations</h2>
+                <p>We introduce SLICER (Symmetrical Learning of Instance and Cluster-level Efficient Representations), a Self-Supervised Learning approach for pre-training audio encoders on unlabeled data to enhance generalization across diverse audio processing tasks. SLICER learns fine-grained audio representations by combining clustering and contrastive learning with a symmetric loss between student and teacher encoders. SLICER sets state-of-the-art results on the LAPE Benchmark, surpassing prior methods trained on larger datasets.
+                </p>
+                <div class="buttons">
+                    <a href="https://ieeexplore.ieee.org/abstract/document/10096970" target="_blank" class="btn">arXiv</a>
+                    <a href="https://github.com/Sreyan88/audio-ssl" target="_blank" class="btn">Code</a>
+                </div>
+            </div>
+            <div class="image-content">
+                <img src="assets/slicer.jpg" alt="CompA Project Image">
+            </div>
+        </div>
+    </section>
+    <section class="project-section">
+        <div class="container">
+            <div class="text-content">
+                <h2>MAST: Multiscale Audio Spectrogram Transformer</h2>
+                <p>We introduce MAST (Multiscale Audio Spectrogram Transformer), a novel audio encoder that incorporates multiscale feature hierarchies into the Audio Spectrogram Transformer (AST). MAST progressively expands embedding dimensions while reducing temporal resolution, using a pyramid structure to capture both low-level acoustic details in early layers and high-level features in deeper layers. MAST shows its effectiveness by achieving a 3.4% average accuracy gain over AST across various downstream tasks.
+                </p>
+                <div class="buttons">
+                    <a href="https://arxiv.org/pdf/2211.01515" target="_blank" class="btn">arXiv</a>
+                    <a href="https://github.com/Sreyan88/LAPE" target="_blank" class="btn">Code</a>
+                </div>
+            </div>
+            <div class="image-content">
+                <img src="assets/mast_final.png" alt="CompA Project Image">
+            </div>
+        </div>
+    </section>
+    <section class="project-section">
+        <div class="container">
+            <div class="text-content">
+                <h2>Stable Distillation: Regularizing Continued Pre-training for Low-Resource Automatic Speech Recognition</h2>
+                <p>We introduce Stable Distillation, a novel approach for continued self-supervised learning (SSL) pre-training aimed at adapting SSL models to low-resource Automatic Speech Recognition (ASR) domains. Our method leverages self-distillation as a regularization technique to address mismatches between source and target domains. Specifically, we first conduct standard continued pre-training on a target ASR dataset to develop a "teacher" model, which is then used as a "student" to replicate the teacher's representations. Our proposed method achieves performance improvements of 0.8–7% on existing speech encoders across various low-resource ASR settings.
+                </p>
+                <div class="buttons">
+                    <a href="https://arxiv.org/abs/2312.12783" target="_blank" class="btn">arXiv</a>
+                    <a href="https://github.com/cs20s030/stable_distillation" target="_blank" class="btn">Code</a>
+                </div>
+            </div>
+            <div class="image-content">
+                <img src="assets/stable_distillation_final.jpg" alt="CompA Project Image">
+            </div>
+        </div>
+    </section>
+    <section class="project-section">
+        <div class="container">
+            <div class="text-content">
+                <h2>FusDom: Combining In-Domain and Out-of-Domain Knowledge for Continuous Self-Supervised Learning
+                </h2>
+                <p>We introduce FusDom, a novel approach for continued pre-training in self-supervised learning (SSL) to enhance Automatic Speech Recognition (ASR) performance without catastrophic forgetting. FusDom adapts SSL models to target domains while preserving knowledge from prior domains by jointly utilizing two identical SSL models, a teacher and a student, connected by a cross-attention head that solves the pre-task for continued pre-training. FusDom shows its robustness by significantly improving target domains' ASR performance (0.2%–7.3%) while maintaining source domain performance.</p>
+                <div class="buttons">
+                    <a href=" https://arxiv.org/abs/2312.13026" target="_blank" class="btn">arXiv</a>
+                    <a href="https://github.com/cs20s030/fusdom" target="_blank" class="btn">Code</a>
+                </div>
+            </div>
+            <div class="image-content">
+                <img src="assets/Fusdom_fine.png" alt="CompA Project Image">
+            </div>
+        </div>
+    </section>
 
 
     <!-- Repeat the above project section for each project, updating content and links accordingly -->
