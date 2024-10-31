@@ -451,3 +451,11 @@ header h1 {
 .custom-spacing h3 {
     margin-top: 0; /* Adjust as needed */
 }
+
+.affiliation {
+    font-size: 0.85em; /* Slightly smaller font */
+    font-style: italic;
+    color: #666666; /* A subtle gray color */
+    display: block; /* Ensures it starts on a new line */
+    margin-top: 4px; /* Adds a little spacing */
+}
