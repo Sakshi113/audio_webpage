@@ -434,3 +434,20 @@ header h1 {
     color: #333;
     font-weight: 600;
 }
+
+.subtle-header {
+    display: block;
+    font-size: 1rem;
+    color: #990a0a;
+    font-style: italic;
+    margin-top: 0.5rem;
+    clear: both; /* Ensures the header appears below */
+}
+
+.custom-spacing h2 {    
+    margin-bottom: 0px; /* Adjust as needed */
+}
+
+.custom-spacing h3 {
+    margin-top: 0; /* Adjust as needed */
+}
