@@ -407,59 +407,68 @@ header h1 {
     margin-top: 0;
 } */
 
+/* General Styles for Team Section */
 .team-wrapper {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-top: 0;
+    width: 100%;
 }
-
 
 .team-section-title {
     font-size: 20px;
     font-weight: bold;
-    text-align: left;
-    margin-top: 40px;  /* More space from previous section */
-    margin-bottom: 20px; /* Ensures spacing between title and images */
-    color: #1a237e; /* Dark blue */
-    width: 100%; /* Ensures both titles are aligned */
+    text-align: center;
+    margin: 40px 0 20px;
+    color: #1a237e;
+    width: 100%;
 }
 
+/* Team Section Grid */
 .team-section {
     display: flex;
     flex-wrap: wrap;
-    gap: 40px; /* Adjust space between team members */
     justify-content: center;
+    gap: 30px; /* Adjust spacing */
     width: 100%;
-    
 }
 
+/* Individual Team Member */
 .team-member {
     text-align: center;
-    width: 175px; /* Adjusted width */
+    width: 160px; /* Adjust width */
     transition: transform 0.3s ease-in-out;
 }
 
 .team-member:hover {
-    transform: scale(1.05); /* Hover effect */
+    transform: scale(1.05);
 }
 
+/* Ensure Headshots are Consistently Sized */
 .team-headshot {
-    width: 130px;
-    height: 130px;
+    width: 120px;
+    height: 120px;
     border-radius: 50%;
+    object-fit: cover;
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
-    transition: box-shadow 0.3s ease-in-out;
 }
 
-.team-headshot:hover {
-    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.3);
-}
 
-.team-name {
-    font-size: 18px;
-    color: #333;
-    font-weight: 600;
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .team-section {
+        gap: 20px;
+    }
+
+    .team-member {
+        width: 120px;
+    }
+
+    .team-headshot {
+        width: 100px;
+        height: 100px;
+    }
 }
 
 .subtle-header {
