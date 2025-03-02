@@ -563,3 +563,32 @@ header h1 {
 .updates-content a:hover {
     text-decoration: underline;
 }
+
+.navbar {
+    background-color: #1f265f;
+    padding: 10px 0;
+    text-align: center;
+}
+.navbar ul {
+    list-style-type: none;
+    padding: 0;
+}
+.navbar li {
+    display: inline;
+    margin: 0 15px;
+}
+.navbar a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.research-item {
+    margin-bottom: 40px;
+}
+.project-image {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
+}
