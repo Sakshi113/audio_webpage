@@ -571,7 +571,7 @@ header h1 {
 }
 
 .navbar {
-    background-color: #1f265f;
+    background-color: #000000;  /* 063c57 */
     padding: 10px 0;
     text-align: center;
 }
@@ -587,6 +587,14 @@ header h1 {
     color: white;
     text-decoration: none;
     font-weight: bold;
+    display: inline-block;
+    transition: transform 0.3s ease-in-out, background-color 0.3s ease-in-out;
+}
+
+.navbar a:hover {
+    transform: scale(1.1); /* Increases size slightly */
+    border-radius: 8px; /* Optional: adds rounded corners */
+    color: #ef6f2f;
 }
 
 .research-item {
