@@ -384,11 +384,14 @@ header h1 {
     display: flex;
     justify-content: center;
     margin-bottom: 40px; /* Adds space between advisor and team */
+    margin: 0 auto; /* Centers the container */
+    max-width: 800px; /* Adjust as needed */
 }
 
 .advisor-member {
     text-align: center;
     transition: transform 0.3s ease-in-out;
+
 }
 
 .advisor-member:hover {
@@ -400,6 +403,7 @@ header h1 {
     height: 150px;
     border-radius: 50%; /* Circular shape */
     box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.3); /* Stronger shadow for emphasis */
+    
 }
 
 .advisor-name {
@@ -408,15 +412,6 @@ header h1 {
     font-weight: bold;
     margin-top: 10px;
 }
-
-/* Team Section Styles */
-/* .team-wrapper {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 40px; 
-    justify-content: center;
-    margin-top: 0;
-} */
 
 .team-wrapper {
     display: flex;
