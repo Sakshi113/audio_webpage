@@ -153,7 +153,7 @@ header h1 {
     background-color: #e7d9c2;
     color: #1f265f;
     border: 2px solid transparent;
-    width: 9%;
+    width: auto%;
     border-radius: 25px;
     padding: 10px 20px;
     font-size: 1em;
