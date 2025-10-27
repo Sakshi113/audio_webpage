@@ -377,6 +377,13 @@ header h1 {
     .team-member p {
         font-size: 16px; /* Adjust font size for mobile */
     }
+    .now-role {
+        font-size: 0.70em;
+        font-weight: 300;
+        color: #555; /* optional: makes it subtler */
+        margin-left: 6px;
+        font-style: italic;
+      }
 }
 
 /* Advisor Section Styles */
