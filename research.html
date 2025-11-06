@@ -39,6 +39,23 @@
     <section class="project-section">
         <div class="container">
             <div class="text-content">
+                <h2>MMAU-Pro: A Challenging and Comprehensive Benchmark for Holistic Evaluation of Audio General Intelligence<br> <span style="color:rgb(0, 26, 255)">AAAI 2025</span><span style="color:red"> (Under Submission)</span></h2>
+                <p>
+                    Audio comprehension-including speech, non-speech sounds, and music-is essential for achieving human-level intelligence. Consequently, AI agents must demonstrate holistic audio understanding to qualify as generally intelligent. However, evaluating auditory intelligence comprehensively remains challenging. To address this gap, we introduce <b>MMAU-Pro</b>, the most comprehensive and rigorously curated benchmark for assessing audio intelligence in AI systems. MMAU-Pro contains 5,305 instances, where each instance has one or more audios paired with human expert-generated question-answer pairs, spanning speech, sound, music, and their combinations. Unlike existing benchmarks, MMAU-Pro evaluates auditory intelligence across 49 unique skills and multiple complex dimensions, including long-form audio comprehension, spatial audio reasoning, multi-audio understanding, among others. All questions are meticulously designed to require deliberate multi-hop reasoning, including both multiple-choice and open-ended response formats. Importantly, audio data is sourced directly ``from the wild" rather than from existing datasets with known distributions. We evaluate 22 leading open-source and proprietary multimodal AI models, revealing significant limitations: even state-of-the-art models such as Gemini 2.5 Flash and Audio Flamingo 3 achieve only 59.2% and 51.7% accuracy, respectively, approaching random performance in multiple categories. Our extensive analysis highlights specific shortcomings and provides novel insights, offering actionable perspectives for the community to enhance future AI systems' progression toward audio general intelligence.
+                </p>
+                <div class="buttons">
+                    <a href="https://arxiv.org/pdf/2508.13992" target="_blank" class="btn">arXiv</a>
+                    <a href="https://sonalkum.github.io/mmau-pro/" target="_blank" class="btn">Project Page</a>
+                </div>
+            </div>
+            <div class="image-content">
+                <img src="assets/mmau-pro.png" alt="MMAU-Pro Project Image">
+            </div>
+        </div>
+    </section>
+    <section class="project-section">
+        <div class="container">
+            <div class="text-content">
                 <h2>Audio Flamingo 3: Advancing Audio Intelligence with Fully Open Large Audio Language Models<br> <span style="color:rgb(0, 26, 255)">NeurIPS 2025</span><span style="color:red"> (Spotlight)</span></h2>
                 <p>
                     We present <b>Audio Flamingo 3</b> (AF3), a fully open state-of-the-art (SOTA) large audio-language model that advances reasoning and understanding across speech, sound, and music. AF3 introduces: (i) AF-Whisper, a unified audio encoder trained using a novel strategy for joint representation learning across all 3 modalities of speech, sound, and music; (ii) flexible, on-demand thinking, allowing the model to deliberately think before answering; (iii) multi-turn, multi-audio chat; (iv) long audio understanding and reasoning (including speech) up to 10 minutes; and (v) voice-to-voice interaction. To enable these capabilities, we propose several large-scale training datasets curated using novel strategies, including AudioSkills-XL, LongAudio-XL, AF-Think, and AF-Chat, and train AF3 with a novel five-stage curriculum-based training strategy. AF3 achieves new SOTA results on over 20+ (long) audio understanding and reasoning benchmarks. We will open-source all our code, data, and checkpoints upon paper acceptance.
